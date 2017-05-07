@@ -1,313 +1,243 @@
 - name: THK
   type: GR
-  channel: '21'
+  channel: 'B8'
 
 - name: NHK E
   type: GR
-  channel: '13'
+  channel: 'B0'
 
 - name: NHK G
   type: GR
-  channel: '20'
+  channel: 'B7'
 
 - name: CTV
   type: GR
-  channel: '19'
+  channel: 'B6'
 
 - name: CBC
   type: GR
-  channel: '18'
+  channel: 'B5'
 
 - name: NBN
   type: GR
-  channel: '22'
+  channel: 'B9'
 
 - name: TVA
   type: GR
-  channel: '23'
+  channel: 'B10'
 
 - name: MTV
   type: GR
-  channel: '27'
+  channel: 'B14'
 
 - name: BS Asahi
   type: BS
-  channel: 'BS1_0'
+  channel: 'B0'
   serviceId: 151
   isDisabled: false
 
 - name: BS-TBS
   type: BS
-  channel: 'BS1_1'
+  channel: 'B1'
   serviceId: 161
   isDisabled: false
 
 - name: WOWOW Prime
   type: BS
-  channel: 'BS3_0'
+  channel: 'B2'
   serviceId: 191
   isDisabled: false
 
 - name: BS Japan
   type: BS
-  channel: 'BS3_1'
+  channel: 'B3'
   serviceId: 171
   isDisabled: false
 
 - name: WOWOW Live
   type: BS
-  channel: 'BS5_0'
+  channel: 'B3'
   serviceId: 192
   isDisabled: false
 
 - name: WOWOW Chinema
   type: BS
-  channel: 'BS5_1'
+  channel: 'B14'
   serviceId: 193
   isDisabled: false
 
-- name: Star channel 2,3
+- name: Star channel 2
   type: BS
-  channel: 'BS7_0'
+  channel: 'B15'
   serviceId: 201
   isDisabled: false
 
-- name: Star channel 2,3
+- name: Star channel 3
   type: BS
-  channel: 'BS7_0'
+  channel: 'B15'
   serviceId: 202
   isDisabled: false
 
 - name: Animax
   type: BS
-  channel: 'BS7_1'
+  channel: 'B16'
   serviceId: 236
   isDisabled: false
 
 - name: Disney
   type: BS
-  channel: 'BS7_2'
+  channel: 'B17'
   serviceId: 256
-  isDisabled: false
+  isDisabled: true
 
 - name: BS11
   type: BS
-  channel: 'BS9_0'
+  channel: 'B4'
   serviceId: 211
   isDisabled: false
 
 - name: Star channel 1
   type: BS
-  channel: 'BS9_1'
+  channel: 'B5'
   serviceId: 200
   isDisabled: false
 
 - name: TwellV
   type: BS
-  channel: 'BS9_2'
+  channel: 'B6'
   serviceId: 222
   isDisabled: false
 
 - name: FOX
   type: BS
-  channel: 'BS11_0'
+  channel: 'B18'
   serviceId: 238
-  isDisabled: false
-
-- name: BS Skyperfect
-  type: BS
-  channel: 'BS11_1'
-  serviceId: 241
   isDisabled: false
 
 - name: BS NIPPON
   type: BS
-  channel: 'BS13_0'
+  channel: 'B7'
   serviceId: 141
   isDisabled: false
 
 - name: BS FUJI
   type: BS
-  channel: 'BS13_1'
+  channel: 'B8'
   serviceId: 181
   isDisabled: false
 
 - name: NHKBS1
   type: BS
-  channel: 'BS15_0'
+  channel: 'B9'
   serviceId: 101
   isDisabled: false
 
 - name: NHKBS Premium
   type: BS
-  channel: 'BS15_1'
+  channel: 'B10'
   serviceId: 103
   isDisabled: false
 
 - name: Green channel
   type: BS
-  channel: 'BS19_0'
+  channel: 'B21'
   serviceId: 234
-  isDisabled: false
+  isDisabled: true
 
 - name: J SPORTS 1
   type: BS
-  channel: 'BS19_1'
+  channel: 'B22'
   serviceId: 242
   isDisabled: false
 
 - name: J SPORTS 2
   type: BS
-  channel: 'BS19_2'
+  channel: 'B23'
   serviceId: 243
   isDisabled: false
 
 - name: IMAGICA
   type: BS
-  channel: 'BS21_0'
+  channel: 'B24'
   serviceId: 252
   isDisabled: false
 
 - name: J SPORTS 3
   type: BS
-  channel: 'BS21_1'
+  channel: 'B25'
   serviceId: 244
   isDisabled: false
 
 - name: J SPORTS 4
   type: BS
-  channel: 'BS21_2'
+  channel: 'B26'
   serviceId: 245
-  isDisabled: false
-
-- name: BS Fishing
-  type: BS
-  channel: 'BS23_0'
-  serviceId: 251
   isDisabled: false
 
 - name: BS Chinema ch
   type: BS
-  channel: 'BS23_1'
+  channel: 'B28'
   serviceId: 255
-  isDisabled: false
+  isDisabled: true
 
 - name: D-Life
   type: BS
-  channel: 'BS23_2'
+  channel: 'B29'
   serviceId: 258
   isDisabled: false
 
-- name: ND6
+- name: TBS Channel 1
   type: CS
-  channel: CS6
-  serviceId: 294
+  space: 1
+  channel: 'B10'
+  serviceId: 301
   isDisabled: false
 
-- name: ND6
+- name: FujiCX1
   type: CS
-  channel: CS6
-  serviceId: 323
-  isDisabled: false
-
-- name: ND6
-  type: CS
-  channel: CS6
-  serviceId: 329
-  isDisabled: false
-
-- name: ND6
-  type: CS
-  channel: CS6
-  serviceId: 340
-  isDisabled: false
-
-- name: ND6
-  type: CS
-  channel: CS6
-  serviceId: 341
-  isDisabled: false
-
-- name: ND6
-  type: CS
-  channel: CS6
-  serviceId: 354
-  isDisabled: false
-
-- name: ND6
-  type: CS
-  channel: CS6
-  serviceId: 294
-  isDisabled: false
-
-- name: ND12
-  type: CS
-  channel: CS12
-  serviceId: 254
-  isDisabled: false
-
-- name: ND12
-  type: CS
-  channel: CS12
-  serviceId: 325
-  isDisabled: false
-
-- name: ND12
-  type: CS
-  channel: CS12
-  serviceId: 330
-  isDisabled: false
-
-- name: ND16
-  type: CS
-  channel: CS16
-  serviceId: 290
-  isDisabled: false
-
-- name: ND16
-  type: CS
-  channel: CS16
-  serviceId: 305
-  isDisabled: false
-
-- name: ND16
-  type: CS
-  channel: CS16
-  serviceId: 311
-  isDisabled: false
-
-- name: ND16
-  type: CS
-  channel: CS16
-  serviceId: 333
-  isDisabled: false
-
-- name: ND16
-  type: CS
-  channel: CS16
-  serviceId: 343
-  isDisabled: false
-
-- name: ND16
-  type: CS
-  channel: CS16
-  serviceId: 353
-  isDisabled: false
-
-- name: ND20
-  type: CS
-  channel: CS20
+  space: 1
+  channel: 'B9'
   serviceId: 307
   isDisabled: false
 
-- name: ND20
+- name: FujiCX2
   type: CS
-  channel: CS20
+  space: 1
+  channel: 'B9'
   serviceId: 308
   isDisabled: false
 
-- name: ND20
+- name: FujiCXNEXT
   type: CS
-  channel: CS20
+  space: 1
+  channel: 'B9'
   serviceId: 309
+  isDisabled: false
+
+- name: ATX
+  type: CS
+  space: 1
+  channel: 'B7'
+  serviceId: 333
+  isDisabled: false
+
+- name: KIDS
+  type: CS
+  space: 1
+  channel: 'B3'
+  serviceId: 335
+  isDisabled: false
+
+- name: History
+  type: CS
+  space: 1
+  channel: 'B1'
+  serviceId: 342
+  isDisabled: false
+
+- name: NationalGeographic
+  type: CS
+  space: 1
+  channel: 'B7'
+  serviceId: 343
   isDisabled: false
