@@ -22,8 +22,9 @@
   "wuiMdnsAdvertisement": true,
 
   "mirakurunPath": "http://container-mirakurun:40772/",
-
-  "recordedFormat": "<date:YYmmddHHMM>_<title>_<type><channel>.m2ts",
-
-  "storageLowSpaceAction": "remove"
+  "recordedFormat": "<date:yyyymmddHHMM>_<title>_<type><channel>.ts",
+  "storageLowSpaceAction": "remove",
+  
+  "recordedCommand": "/ts-renamer/scripts/rename.sh",
+  "_handbrake": "ts HandBrakeCLI -i '/usr/local/chinachu/recorded/[170423-1958][GRB6][Mirakurun (container-mirakurun)]世界の果てまでイッテＱ！.m2ts' -t 1 -o '/usr/local/chinachu/recorded/itte.mp4' -f mp4 --detelecine --decomb -w 1280 -l 720 --crop 0:0:0: -e x264 -q 21 --pfr -a 1,2 -E fdk_aac,fdk_aac -6 stereo,stereo -R Auto,Auto -B 256,224 -D 0,0 --gain 0,0 --crop 0:0:0:0 -x merange=32:deblock=-2,-2:b-adapt=2:rc-lookahead=50:ref=6:bframes=6:me=umh:analyse=all:trellis=2:no-fast-pskip=1:scenecut=70:b-pyramid=strict --x264-preset=fast --verbose=1"
 }

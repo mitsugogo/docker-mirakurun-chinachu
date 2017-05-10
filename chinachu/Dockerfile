@@ -1,5 +1,5 @@
 FROM alpine:3.5
-MAINTAINER h-mineta <h-mineta@0nyx.net>
+MAINTAINER mitsugogo <mitsugogo@gmail.com>
 
 ARG REPOSITORY="git://github.com/Chinachu/Chinachu.git"
 ARG BRANCH="master"
@@ -93,6 +93,13 @@ RUN wget http://vicerveza.homeunix.net/~viric/soft/ts/ts-1.0.tar.gz \
        && make \
        && make install 
 
+# ts-renamer(改造版)
+WORKDIR /
+RUN apk add nodejs nodejs-npm \
+       && git clone https://github.com/mitsugogo/ts-renamer.git \
+       && cd ts-renamer \
+       && npm i \
+       && cp ./settings/settings.sample.json ./settings/settings.json
 
 # cleaning 
 # RUN cd / \
