@@ -62,11 +62,11 @@ WORKDIR /tmp
 RUN git clone https://github.com/HandBrake/HandBrake.git
 
 RUN git clone https://github.com/lu-zero/mfx_dispatch.git mfx_dispatch-9f4a84d7 \
-   && cd mfx_dispatch-9f4a84d7 \
-   && git checkout 9f4a84d7 \
-   && cd .. \
-   && tar czvf mfx_dispatch-9f4a84d7.tar.gz mfx_dispatch-9f4a84d7 \
-   && mkdir -p /tmp/HandBrake/download/ \
+        && cd mfx_dispatch-9f4a84d7 \
+        && git checkout 9f4a84d7 \
+        && cd .. \
+        && tar czvf mfx_dispatch-9f4a84d7.tar.gz mfx_dispatch-9f4a84d7 \
+        && mkdir -p /tmp/HandBrake/download/ \
    && cp mfx_dispatch-9f4a84d7.tar.gz /tmp/HandBrake/download/
 
 RUN echo '140.113.17.209  ftp.tw.freebsd.org' >> /etc/hosts
@@ -88,18 +88,20 @@ RUN cd ./ \
 # コマンドをキューに
 WORKDIR /tmp
 RUN wget http://vicerveza.homeunix.net/~viric/soft/ts/ts-1.0.tar.gz \
-       && tar zxvf ts-1.0.tar.gz \
-       && cd ts-1.0 \
-       && make \
-       && make install 
+        && tar zxvf ts-1.0.tar.gz \
+        && cd ts-1.0 \
+        && make \
+        && make install 
 
 # ts-renamer(改造版)
 WORKDIR /
 RUN apk add nodejs nodejs-npm \
-       && git clone https://github.com/mitsugogo/ts-renamer.git \
-       && cd ts-renamer \
-       && npm i \
-       && cp ./settings/settings.sample.json ./settings/settings.json
+        && git clone https://github.com/mitsugogo/ts-renamer.git \
+        && cd ts-renamer \
+        && git fetch --prune \
+        && git pull \
+        && npm i \
+        && cp ./settings/settings.sample.json ./settings/settings.json
 
 # cleaning 
 # RUN cd / \

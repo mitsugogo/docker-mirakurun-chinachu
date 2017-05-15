@@ -1,5 +1,5 @@
 FROM alpine:3.5
-MAINTAINER h-mineta <h-mineta@0nyx.net>
+MAINTAINER mitsugogo <mitsugogo@gmail.com>
 
 RUN set -x \
 	&& apk upgrade --update \
@@ -81,9 +81,9 @@ RUN mv BonDriver_Proxy-S.so.conf BonDriver_Proxy-S0.so.conf \
         && cp BonDriver_Proxy-S0.so.conf BonDriver_Proxy-S2.so.conf \
         && cp BonDriver_Proxy-S0.so.conf BonDriver_Proxy-S3.so.conf 
 RUN mv BonDriver_Proxy-T.so.conf BonDriver_Proxy-T0.so.conf \
-       && cp BonDriver_Proxy-T0.so.conf BonDriver_Proxy-T1.so.conf \
-       && cp BonDriver_Proxy-T0.so.conf BonDriver_Proxy-T2.so.conf \
-       && cp BonDriver_Proxy-T0.so.conf BonDriver_Proxy-T3.so.conf
+        && cp BonDriver_Proxy-T0.so.conf BonDriver_Proxy-T1.so.conf \
+        && cp BonDriver_Proxy-T0.so.conf BonDriver_Proxy-T2.so.conf \
+        && cp BonDriver_Proxy-T0.so.conf BonDriver_Proxy-T3.so.conf
 
 # recbond
 RUN git clone https://github.com/mitsugogo/recbond.git /proxy/BonDriverProxy_Linux/recbond \
