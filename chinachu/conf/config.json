@@ -22,7 +22,7 @@
   "wuiMdnsAdvertisement": true,
 
   "mirakurunPath": "http://container-mirakurun:40772/",
-  "recordedFormat": "<date:yyyymmddHHMM>_<title>_<type><channel>.ts",
+  "recordedFormat": "<date:yyyymmddHHMM>_<title>_<type><channel>.m2ts",
   "storageLowSpaceAction": "remove",
   
   "recordedCommand": "/ts-renamer/scripts/rename.sh",
